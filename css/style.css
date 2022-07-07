@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: hsl(234, 12%, 34%);
+}
+
+/**************************/
+/* section card feature*/
+/**************************/
+.card-feature {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 4.8rem 9.6rem;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.heading-feature {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 0 24rem 3.2rem 24rem;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  font-size: 3.8rem;
+  font-weight: 200;
+  letter-spacing: -0.75px;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 600;
+  letter-spacing: -0.75px;
+}
+
+.card-feature-text {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.four-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.feature-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.feature {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 2.2rem;
+  box-shadow: 0 2rem 3rem rgba(163, 165, 174, 0.219);
+}
+
+.feature-first {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.feature-second {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.feature-third {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+.feature-forth {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.heading-teritary {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  padding: 0 1rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.card-img {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: block;
+  margin-left: auto;
+}
+/**************************/
+/* BELOW 375px (mobile) */
+/**************************/
+@media (max-width: 24em) {
+  .card-feature {
+    padding: 3.2rem 2rem;
+  }
+
+  .heading-feature {
+    padding: 3.2rem 0;
+    margin-bottom: 3.2rem;
+    text-align: center;
+  }
+
+  .subheading,
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+
+  .four-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .feature {
+    box-shadow: 0 2rem 3rem rgba(163, 165, 174, 0.219);
+  }
+}
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
